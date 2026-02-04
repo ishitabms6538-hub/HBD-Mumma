@@ -1,0 +1,171 @@
+body {
+    background: pink;
+    font-family: Arial;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* SCREEN LAYOUT */
+
+.screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MAIN SCREEN TOP POSITION */
+
+#mainScreen {
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+/* VALENTINE TEXT */
+
+#mainScreen h1 {
+    font-size: 55px;
+    margin-bottom: 40px;
+margin-top: 10px;
+    color: red;
+font-family: "Georgia", serif;
+}
+
+/* BUTTON CONTAINER (Centers YES + NO) */
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 40px;
+}
+
+
+/* GENERAL BUTTON STYLE */
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+/* YES BUTTON */
+
+#yesBtn {
+    background: red;
+    color: white;
+}
+
+/* NO BUTTON STARTS NORMAL */
+
+#noBtn {
+    background: white;
+    color: red;
+}
+
+/* INTRO BUTTON */
+
+#startLove {
+    background: white;
+    color: red;
+    font-size: 60px;
+    padding: 30px 90px;
+    border-radius: 20px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+/* PULSE ANIMATION */
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+
+/* CAPTION AT BOTTOM */
+
+#caption {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    color: darkred;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+/* HIDDEN CLASS */
+
+.hidden {
+    display: none;
+}
+
+
+/* Intro screen layout */
+#introScreen {
+    position: relative;
+}
+
+/* Welcome text at top */
+#introScreen h1 {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+/* Start Love button EXACT center */
+#startLove {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Container for YES & NO buttons */
+#mainScreen .buttonContainer {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Remove absolute positioning initially */
+#noBtn {
+    position: relative;
+}
+
+
+
+.mainMessage {
+    font-size: 40px;
+    font-weight: bold;
+    color: darkred;
+    margin-top: 20px;
+}
+
+.psMessage {
+    font-size: 40px;
+    margin-top: 0px;
+margin-bottom: 10px;
+    color: #7a0033;
+}
+
+.mainMessage {
+    font-size: 48px;
+    font-weight: bold;
+    color: darkred;
+    text-shadow: 2px 2px 6px rgba(255,0,0,0.4);
+}
